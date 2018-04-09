@@ -15,8 +15,11 @@ $indent-amount: 40px !default;
 $normalize-vertical-rhythm: false !default;
 
 // personal
+$font-family: system, -apple-system, ".SFNSDisplay-Regular", "PingfangSC", "Lantinghei SC", "Source Han Sans", Roboto, Helvetica, Arial, sans-serif;
+
 $title-fs: 24px;
 $content-fs: 16px;
+$gap-block: 20px;
 
 $black: #000;
 $white: #fff;
