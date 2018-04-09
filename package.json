@@ -5,7 +5,7 @@
   "author": "muzidx",
   "license": "ISC",
   "bin": {
-    "totoro": "index.js"
+    "totoro": "./bin/totoro.js"
   },
   "repository": {
     "type": "git",
