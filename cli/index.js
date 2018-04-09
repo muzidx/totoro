@@ -2,7 +2,7 @@
 * @Author: muzidx
 * @Date:   2018-04-09 15:13:29
 * @Last Modified by:   muzidx
-* @Last Modified time: 2018-04-09 16:49:42
+* @Last Modified time: 2018-04-09 16:59:39
 */
 
 const path = require('path')
@@ -28,7 +28,7 @@ let projectName = args[1]
 
 if (selectVersion) {
   fs.mkdirSync(path.resolve(projectName))
-  copydir.sync(path.resolve(`./package/${selectVersion}`), path.resolve(projectName))
+  copydir.sync(require.resolve(`./package/${selectVersion}`), path.resolve(projectName))
 }
 
 console.log(chalk.bold.red('please check the cli param, or use `totoro -h` to view the command!'))
