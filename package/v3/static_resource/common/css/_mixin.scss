@@ -1,0 +1,16 @@
+/*
+* @Author: muzidx
+* @Date:   2018-04-09 12:30:45
+* @Last Modified by:   muzidx
+* @Last Modified time: 2018-04-09 12:33:27
+*/
+
+@mixin clearfix {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
