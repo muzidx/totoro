@@ -2,14 +2,17 @@
   "name": "wf-v3",
   "version": "1.0.0",
   "author": "muzidx",
+  "license": "ISC",
   "devDependencies": {
     "babel-loader": "^7.1.4",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.2",
     "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
     "gulp-base64": "^0.1.3",
     "gulp-rename": "^1.2.2",
     "inquirer": "^5.2.0",
+    "node-sass": "^4.8.3",
     "postcss-loader": "^2.1.3",
     "require-dir": "^1.0.0",
     "sass-lint": "^1.12.1",
@@ -22,8 +25,6 @@
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "gulp-sass": "^4.0.1",
-    "node-sass": "^4.8.3"
+    "babel-preset-stage-0": "^6.24.1"
   }
 }

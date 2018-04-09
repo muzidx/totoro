@@ -1,0 +1,27 @@
+{
+  "name": "totoro",
+  "version": "1.0.0",
+  "description": "",
+  "author": "muzidx",
+  "license": "ISC",
+  "bin": {
+    "totoro": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muzidx/totoro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muzidx/totoro/issues"
+  },
+  "homepage": "https://github.com/muzidx/totoro",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "chalk": "^2.3.2",
+    "commander": "^2.15.1",
+    "copy-dir": "^0.3.0",
+    "fs-extra": "^5.0.0"
+  }
+}
