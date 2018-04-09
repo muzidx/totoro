@@ -1,6 +1,6 @@
 {
   "name": "totoro",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "author": "muzidx",
   "license": "ISC",
@@ -21,7 +21,6 @@
   "devDependencies": {
     "chalk": "^2.3.2",
     "commander": "^2.15.1",
-    "copy-dir": "^0.3.0",
-    "fs-extra": "^5.0.0"
+    "copy-dir": "^0.3.0"
   }
 }
