@@ -1,0 +1,24 @@
+// via(https://github.com/JohnAlbin/normalize-scss/blob/master/sass/normalize/_variables.scss)
+
+$base-font-size: 14px !default;
+$base-line-height: 20px !default;
+$base-font-family: null !default;
+
+$h1-font-size: 2    * $base-font-size !default;
+$h2-font-size: 1.5  * $base-font-size !default;
+$h3-font-size: 1.17 * $base-font-size !default;
+$h4-font-size: 1    * $base-font-size !default;
+$h5-font-size: 0.83 * $base-font-size !default;
+$h6-font-size: 0.67 * $base-font-size !default;
+
+$indent-amount: 40px !default;
+$normalize-vertical-rhythm: false !default;
+
+// personal
+$title-fs: 24px;
+$content-fs: 16px;
+
+$black: #000;
+$white: #fff;
+$gray: #494949;
+$smoke: #9b9b9b;
