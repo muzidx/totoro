@@ -2,7 +2,7 @@
 * @Author: muzidx
 * @Date:   2018-04-09 15:13:29
 * @Last Modified by:   muzidx
-* @Last Modified time: 2018-04-09 17:12:22
+* @Last Modified time: 2018-04-09 17:16:52
 */
 
 const path = require('path')
@@ -25,7 +25,7 @@ program.parse(process.argv)
 // create target
 let selectVersion = script
 let projectName = args[1] || 'project-example'
-let installPath = path.resolve(process.argv[1], `../package/${selectVersion}`)
+let installPath = path.resolve(__dirname, `../package/${selectVersion}`)
 
 if (selectVersion) {
   fs.mkdirSync(path.resolve(projectName))
