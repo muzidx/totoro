@@ -2,7 +2,7 @@
 * @Author: muzidx
 * @Date:   2018-04-09 15:13:29
 * @Last Modified by:   muzidx
-* @Last Modified time: 2018-04-09 17:16:52
+* @Last Modified time: 2018-04-09 17:46:52
 */
 
 const path = require('path')
@@ -12,6 +12,7 @@ const chalk = require('chalk')
 const pkgJson = require('../package.json')
 const program = require('commander')
 
+const cwd = process.cwd()
 const script = process.argv[2]
 const args = process.argv.slice(3)
 
@@ -25,7 +26,8 @@ program.parse(process.argv)
 // create target
 let selectVersion = script
 let projectName = args[1] || 'project-example'
-let installPath = path.resolve(__dirname, `../package/${selectVersion}`)
+let installPath = path.resolve(cwd, `./package/${selectVersion}`)
+console.log(installPath)
 
 if (selectVersion) {
   fs.mkdirSync(path.resolve(projectName))
