@@ -1,3 +1,10 @@
+/*
+* @Author: muzidx
+* @Date:   2018-04-08 16:45:16
+* @Last Modified by:   muzidx
+* @Last Modified time: 2018-04-09 11:11:54
+*/
+
 const path = require('path')
 const webpack = require('webpack')
 const autoprefixer = require('autoprefixer')
@@ -20,14 +27,14 @@ module.exports = function (config, NODE_ENV) {
           exclude: "/node_modules/",
           use: ExtractTextPlugin.extract({
             fallback: 'style-loader',
-            use: 'css-loader!sass-loader'
+            use: ['css-loader', 'sass-loader', 'postcss-loader']
           })
         },
         {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
           use: {
-            loader: "babel-loader"
+            loader: "babel-loader?cacheDirectory=true"
           }
         },
         {
@@ -58,8 +65,9 @@ module.exports = function (config, NODE_ENV) {
   }
 
   config.plugins = defaultConfig.plugins.concat(config.plugins||[])
+  const result = Object.assign({}, defaultConfig, config)
 
-  var result = Object.assign({}, defaultConfig, config)
+  console.log('=== The current runing env is ===', NODE_ENV)
 
   return result
 }
