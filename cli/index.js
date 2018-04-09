@@ -2,7 +2,7 @@
 * @Author: muzidx
 * @Date:   2018-04-09 15:13:29
 * @Last Modified by:   muzidx
-* @Last Modified time: 2018-04-09 16:39:03
+* @Last Modified time: 2018-04-09 16:49:42
 */
 
 const path = require('path')
@@ -24,7 +24,7 @@ program.parse(process.argv)
 
 // create target
 let selectVersion = script
-let projectName = args[0]
+let projectName = args[1]
 
 if (selectVersion) {
   fs.mkdirSync(path.resolve(projectName))
